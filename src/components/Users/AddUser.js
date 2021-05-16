@@ -56,12 +56,18 @@ const AddUser = (props) => {
       <Card className={classes.input}>
         <form onSubmit={addUserHandler}>
           <label htmlFor="username">Username</label>
+
+          {/* The following `input` is now `uncontrolled` */}
           <input
             id="username"
             type="text"
             ref={nameInputRef}
           />
+
+
           <label htmlFor="age">Age (Years)</label>
+
+          {/* The following `input` is now `uncontrolled` */}
           <input
             id="age"
             type="number"
